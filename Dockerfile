@@ -5,6 +5,6 @@ RUN apt-get update -y && apt-get upgrade -y \
     && rm -rf /var/lib/apt/lists/*
 COPY . /app/
 WORKDIR /app/
-RUN git clone https://github.com/anasty17/mirror-leech-telegram-bot
-RUN cd mirror-leech-telegram-bot && pip3 install -r requirements-cli.txt
-CMD cd mirror-leech-telegram-bot && bash start.sh
+RUN git clone https://github.com/OgkANURAG/anas_try
+RUN cd anas_try && pip3 install -r requirements-cli.txt
+CMD cd anas_try && bash start.sh
