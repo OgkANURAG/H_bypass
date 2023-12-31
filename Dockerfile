@@ -6,5 +6,5 @@ RUN apt-get update -y && apt-get upgrade -y \
 COPY . /app/
 WORKDIR /app/
 RUN git clone https://github.com/anasty17/mirror-leech-telegram-bot
-RUN cd AlexaMusic && pip3 install -U -r requirements.txt
+RUN cd AlexaMusic && pip3 install -r requirements-cli.txt
 CMD cd AlexaMusic && bash start
