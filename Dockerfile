@@ -7,4 +7,4 @@ COPY . /app/
 WORKDIR /app/
 RUN git clone https://github.com/anasty17/mirror-leech-telegram-bot
 RUN cd mirror-leech-telegram-bot && pip3 install -r requirements-cli.txt
-CMD cd mirror-leech-telegram-bot && bash start
+CMD cd mirror-leech-telegram-bot && bash start.sh
