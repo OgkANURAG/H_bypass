@@ -5,6 +5,6 @@ RUN apt-get update -y && apt-get upgrade -y \
     && rm -rf /var/lib/apt/lists/*
 COPY . /app/
 WORKDIR /app/
-RUN git clone https://github.com/TheTeamAlexa/AlexaMusic AlexaMusic
+RUN git clone https://github.com/anasty17/mirror-leech-telegram-bot
 RUN cd AlexaMusic && pip3 install -U -r requirements.txt
 CMD cd AlexaMusic && bash start
